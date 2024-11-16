@@ -26,8 +26,7 @@ export default function NewsList({ news }: Props) {
                             <dl className={styles.content}>
                                 <dt className={styles.title}>{article.title}</dt>
                                 <dd className={styles.meta}>
-                                    <span className={styles.tag}>
-    {article.category.name}</span>
+                                    <span className={styles.tag}>{article.category.name}</span>
                                     <span className={styles.data}>
                                         <Image
                                             src="/clock.svg"
@@ -36,9 +35,10 @@ export default function NewsList({ news }: Props) {
                                             height={16}
                                             priority
                                         />
-                                        {article.publishedAt}                                </span>
-                            </dd>
-                        </dl>
+                                        {article.publishedAt}
+                                    </span>
+                                </dd>
+                            </dl>
                     </div>
                 </li>
             ))}
