@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import NewsList from "@/app/_components/NewsList";
 import ButtonLink from "@/app/_components/ButtonLink";
-import type { News } from "@/app/_libs/microcms";
+import { News } from "@/app/_libs/microcms";
 
 const data: {
     contents: News[] } = {
@@ -59,8 +59,8 @@ export default function Home() {
                 />
             </section>
             <section className={styles.news}>
-                <h2 className={styles.newsTitlr}>News</h2>
-                <NewsList news={sliceData}/>
+                <h2 className={styles.newsTitle}>News</h2>
+                <NewsList news={sliceData} />
                 <div className={styles.newsLink}>
                     <ButtonLink href="/news">もっとみる</ButtonLink>
                 </div>
