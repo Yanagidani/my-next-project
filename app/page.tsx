@@ -1,6 +1,8 @@
 import styles from "./page.module.css";
 import Image from "next/image";
 
+import ButtonLink from "@/app/_components/ButtonLink";
+
 type News ={
     id: string;
     title: string;
@@ -47,7 +49,6 @@ const data: {
 
 export default function Home() {
     const sliceData = data.contents.slice(0, 2);
-
     return (
         <>
             <section className={styles.top}>
@@ -101,6 +102,9 @@ export default function Home() {
                         </li>
                     ))}
                 </ul>
+                <div className={styles.newsLink}>
+                    <ButtonLink href="/news">もっとみる</ButtonLink>
+                </div>
             </section>
         </>
     );

@@ -8,3 +8,14 @@
         var(--color-button-primary);
     color: var(--color-text-unpainted)
 }
+
+.bitton:hover {
+    opacity: 0.9;
+}
+
+@media (mx-width: 640px) {
+    .button {
+        padding: 16px 24px;
+        width:  100%;
+    }
+}
