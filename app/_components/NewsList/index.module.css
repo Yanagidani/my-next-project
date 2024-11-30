@@ -1,6 +1,5 @@
 .list{
-    border-bottom:
-        1px solid
+    border-bottom: 1px solid
 var(--color-border-light);
 }
 
@@ -11,7 +10,7 @@ var(--color-border-light);
 .link {
     display: flex;
     align-items: flex-start;
-    gap: 0px;
+    gap: 40px;
     padding: 24px 0;
 }
 
