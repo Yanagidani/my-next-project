@@ -18,7 +18,7 @@ export default function NewsList({ news }: Props) {
     }
     return (
         <ul>
-            {news.map((article)=> (
+            {news.map((article) => (
                 <li key={article.id} className={styles.list}>
                     <Link href={`/news/${article.id}`} className={styles.link}>
                         {article.thumbnail ? (
@@ -38,7 +38,7 @@ export default function NewsList({ news }: Props) {
                                 height={630}
                             />
                         )}
-                        
+
                         <dl className={styles.content}>
                             <dt className={styles.title}>{article.title}</dt>
                             <dd className={styles.meta}>
