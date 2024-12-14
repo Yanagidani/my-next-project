@@ -6,9 +6,11 @@ import { useState } from "react";
 import cx from "classnames";
 import styles from "./index.module.css";
 
+
 export default function Menu() {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
-    const open = ()=> setIsOpen(Tree);
+    const [isOpen, setOpen] = useState<boolean>(false);
+    const open = ()=> setOpen(true);
+    const close = () => setOpen(false);
 
     return (
         <div>
