@@ -16,7 +16,7 @@ function SearchFieldComponent() {
         if (q instanceof HTMLInputElement) {
             const params = new URLSearchParams () ;
             params. set("q", q. value.trim ());
-            router.push(`/news/search?${params. toString ()}`);
+            router.push(`/news/search?${params.toString()}`);
         }
     }; 
 
