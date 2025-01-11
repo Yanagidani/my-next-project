@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation"
-import styles from ". /index.module.css";
+import { useRouter, useSearchParams } from "next/navigation";
+import styles from "./index.module.css";
 import { Suspense }from "react";
 
 function SearchFieldComponent() {

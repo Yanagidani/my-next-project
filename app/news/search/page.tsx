@@ -13,7 +13,7 @@ export default async function Page({ searchParams }: Props) {
         limit: NEWS_LIST_LIMIT,
         q: searchParams. q,
     });
-    
+
     return (
         <>
             < SearchField />
